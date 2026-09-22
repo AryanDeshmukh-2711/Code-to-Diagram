@@ -23,7 +23,7 @@ def create_app() -> FastAPI:
     logging.basicConfig(level=settings.log_level)
 
     app = FastAPI(
-        title="AI Software Architect API",
+        title="Code to Diagram API",
         version="0.1.0",
         lifespan=lifespan,
     )

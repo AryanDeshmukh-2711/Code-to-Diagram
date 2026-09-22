@@ -1,7 +1,7 @@
 [project]
 name = "asa-api"
 version = "0.1.0"
-description = "AI Software Architect — HTTP API"
+description = "Code to Diagram — HTTP API"
 requires-python = ">=3.12"
 dependencies = [
     "asa-shared",

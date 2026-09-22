@@ -1,4 +1,4 @@
-# AI Software Architect — Project Context
+# Code to Diagram — Project Context
 
 ## What this is
 

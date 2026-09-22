@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🏛️ AI Software Architect
+# 🏛️ Code to Diagram
 
 ### Describe your project once. Get every diagram and the requirements document — all in agreement.
 
@@ -245,7 +245,7 @@ Sixty of the Python tests need the PostgreSQL database that the Docker stack pro
 ## 📁 What's in this repository
 
 ```
-📦 AI Software Architect
+📦 Code to Diagram
 ├── 📂 web/         the web app you use
 ├── 📂 api/         the API the web app talks to
 ├── 📂 worker/      where every diagram and document is generated
@@ -255,7 +255,7 @@ Sixty of the Python tests need the PostgreSQL database that the Docker stack pro
 └── 📂 docs/        the developer guide and milestone notes
 ```
 
-The product thinking is written down too: [`PRD_AI_Software_Architect.md`](PRD_AI_Software_Architect.md) and [`SRS_AI_Software_Architect.md`](SRS_AI_Software_Architect.md).
+The product thinking is written down too: [`PRD_Code_to_Diagram.md`](PRD_Code_to_Diagram.md) and [`SRS_Code_to_Diagram.md`](SRS_Code_to_Diagram.md).
 
 ---
 

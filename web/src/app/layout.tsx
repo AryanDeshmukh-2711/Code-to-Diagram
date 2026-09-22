@@ -4,7 +4,7 @@ import "./globals.css";
 import { AppHeader } from "@/components/AppHeader";
 
 export const metadata: Metadata = {
-  title: "AI Software Architect",
+  title: "Code to Diagram",
   description:
     "Turn a project description into a submission-ready SRS and a consistent UML diagram set.",
 };

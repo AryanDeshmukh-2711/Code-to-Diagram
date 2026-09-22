@@ -1,7 +1,7 @@
 [project]
 name = "asa-worker"
 version = "0.1.0"
-description = "AI Software Architect — async generation workers"
+description = "Code to Diagram — async generation workers"
 requires-python = ">=3.12"
 dependencies = [
     "asa-shared",

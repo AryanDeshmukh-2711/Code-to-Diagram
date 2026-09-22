@@ -1,7 +1,7 @@
 import { ChatSession } from "@/components/chat/ChatSession";
 
 export const metadata = {
-  title: "Chat — AI Software Architect",
+  title: "Chat — Code to Diagram",
 };
 
 export default async function ProjectChatPage({

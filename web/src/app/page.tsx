@@ -54,7 +54,7 @@ export default function Home() {
   return (
     <main className="mx-auto flex min-h-screen max-w-2xl flex-col justify-center gap-6 p-8">
       <div className="flex flex-col gap-4">
-        <h1 className="text-2xl font-semibold tracking-tight">AI Software Architect</h1>
+        <h1 className="text-2xl font-semibold tracking-tight">Code to Diagram</h1>
         <p className="text-sm text-muted-foreground">
           Drop a PDF or paste a description and I&apos;ll turn it into a reviewable model.
         </p>

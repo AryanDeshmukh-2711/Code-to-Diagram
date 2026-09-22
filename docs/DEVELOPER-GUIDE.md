@@ -1,6 +1,6 @@
-# AI Software Architect — developer guide
+# Code to Diagram — developer guide
 
-Everything about using, running and changing AI Software Architect in depth.
+Everything about using, running and changing Code to Diagram in depth.
 For what it is and why, start with the [README](../README.md).
 
 **Give it your project idea. Get back all the diagrams and the requirements
@@ -424,8 +424,8 @@ API.
 
 ### Documents
 
-[`PRD_AI_Software_Architect.md`](../PRD_AI_Software_Architect.md) ·
-[`SRS_AI_Software_Architect.md`](../SRS_AI_Software_Architect.md) ·
+[`PRD_Code_to_Diagram.md`](../PRD_Code_to_Diagram.md) ·
+[`SRS_Code_to_Diagram.md`](../SRS_Code_to_Diagram.md) ·
 [`CLAUDE.md`](../CLAUDE.md) — project context and working agreement
 
 ### Licence
