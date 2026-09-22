@@ -17,7 +17,7 @@ from typing import Annotated
 
 from pydantic import StringConstraints
 
-MAX_SLUG_LENGTH = 64
+MAX_SLUG_LENGTH = 128
 
 SLUG_PATTERN = r"^[a-z0-9]+(?:-[a-z0-9]+)*$"
 

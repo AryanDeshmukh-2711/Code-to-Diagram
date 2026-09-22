@@ -64,7 +64,7 @@
       "additionalProperties": false,
       "properties": {
         "id": {
-          "maxLength": 64,
+          "maxLength": 128,
           "minLength": 1,
           "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
           "type": "string"
@@ -119,7 +119,7 @@
           "type": "string"
         },
         "id": {
-          "maxLength": 64,
+          "maxLength": 128,
           "minLength": 1,
           "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
           "type": "string"
@@ -147,7 +147,7 @@
       "additionalProperties": false,
       "properties": {
         "id": {
-          "maxLength": 64,
+          "maxLength": 128,
           "minLength": 1,
           "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
           "type": "string"
@@ -159,7 +159,7 @@
         },
         "participants": {
           "items": {
-            "maxLength": 64,
+            "maxLength": 128,
             "minLength": 1,
             "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
             "type": "string"
@@ -184,7 +184,7 @@
       "additionalProperties": false,
       "properties": {
         "from": {
-          "maxLength": 64,
+          "maxLength": 128,
           "minLength": 1,
           "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
           "type": "string"
@@ -199,7 +199,7 @@
           "type": "integer"
         },
         "to": {
-          "maxLength": 64,
+          "maxLength": 128,
           "minLength": 1,
           "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
           "type": "string"
@@ -287,7 +287,7 @@
       "properties": {
         "deployedComponents": {
           "items": {
-            "maxLength": 64,
+            "maxLength": 128,
             "minLength": 1,
             "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
             "type": "string"
@@ -295,7 +295,7 @@
           "type": "array"
         },
         "id": {
-          "maxLength": 64,
+          "maxLength": 128,
           "minLength": 1,
           "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
           "type": "string"
@@ -336,13 +336,13 @@
           "default": null
         },
         "from": {
-          "maxLength": 64,
+          "maxLength": 128,
           "minLength": 1,
           "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
           "type": "string"
         },
         "id": {
-          "maxLength": 64,
+          "maxLength": 128,
           "minLength": 1,
           "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
           "type": "string"
@@ -361,7 +361,7 @@
           "default": null
         },
         "to": {
-          "maxLength": 64,
+          "maxLength": 128,
           "minLength": 1,
           "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
           "type": "string"
@@ -395,7 +395,7 @@
       "additionalProperties": false,
       "properties": {
         "id": {
-          "maxLength": 64,
+          "maxLength": 128,
           "minLength": 1,
           "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
           "type": "string"
@@ -435,13 +435,13 @@
       "additionalProperties": false,
       "properties": {
         "entityRef": {
-          "maxLength": 64,
+          "maxLength": 128,
           "minLength": 1,
           "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
           "type": "string"
         },
         "id": {
-          "maxLength": 64,
+          "maxLength": 128,
           "minLength": 1,
           "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
           "type": "string"
@@ -491,7 +491,7 @@
           "default": null
         },
         "to": {
-          "maxLength": 64,
+          "maxLength": 128,
           "minLength": 1,
           "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
           "type": "string"
@@ -521,7 +521,7 @@
       "properties": {
         "actors": {
           "items": {
-            "maxLength": 64,
+            "maxLength": 128,
             "minLength": 1,
             "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
             "type": "string"
@@ -537,7 +537,7 @@
           "type": "array"
         },
         "id": {
-          "maxLength": 64,
+          "maxLength": 128,
           "minLength": 1,
           "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
           "type": "string"
