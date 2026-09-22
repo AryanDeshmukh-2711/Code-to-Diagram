@@ -1,97 +1,276 @@
-# AI Software Architect
+<div align="center">
 
-**Give it your project idea. Get back all the diagrams and the requirements
-document for your submission — matching each other, ready to hand in.**
+# 🏛️ AI Software Architect
 
-If you've ever had to submit a Software Requirements Specification (SRS) plus
-a full set of UML diagrams for a college project, you already know the
-annoying part isn't drawing one diagram — it's that the moment you change
-something, you have to go back and fix it in seven other places too, and
-they never quite agree with each other by the time you're done.
+### Describe your project once. Get every diagram and the requirements document — all in agreement.
 
-This tool fixes that by only ever having **one** source of truth. You
-describe your project once, it builds a model from that description, and
-every diagram and every section of the document is generated *from that same
-model* — so they can't disagree with each other, because they were never
-independent in the first place.
+**Turns a project description into 8 matching UML and ER diagrams plus a formatted IEEE-830<br/>Software Requirements Specification, as PDF and Word — free, private, on your own computer.**
 
-It runs entirely on your own computer, using a free local AI model. No
-account, no subscription, no sending your project idea to a company's
-servers.
+<br/>
+
+![Next.js](https://img.shields.io/badge/Next.js-15-000000?style=for-the-badge&logo=nextdotjs&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white) ![Python](https://img.shields.io/badge/Python-3.12+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+<br/>
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white) ![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white) ![PlantUML](https://img.shields.io/badge/PlantUML-diagrams-6E4C9E?style=for-the-badge) ![Ollama](https://img.shields.io/badge/Ollama-local_AI-000000?style=for-the-badge&logo=ollama&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+
+![Diagrams](https://img.shields.io/badge/diagrams-8_types-3B82F6) ![Formats](https://img.shields.io/badge/export-PDF_·_DOCX-3B82F6) ![Tests](https://img.shields.io/badge/automated_tests-680+-2EA043) ![Cost](https://img.shields.io/badge/cost-free-2EA043)
+
+</div>
 
 ---
 
-## What you get
+## 👋 In 30 seconds
 
-- **8 UML/ER diagrams**, the standard set most departments ask for:
+<table>
+<tr>
+<td width="22%">
 
-  | Diagram | In plain terms |
-  |---|---|
-  | Class | What data your system stores, and how the pieces connect |
-  | Use Case | Who uses the system, and what each of them can do |
-  | Sequence | Step by step, who talks to whom to get one task done |
-  | Activity | The flowchart of a process |
-  | State | The stages one thing passes through (an order: Placed → Shipped → Delivered) |
-  | Component | The big building blocks of the software and how they plug together |
-  | Deployment | Which machine/server each part actually runs on |
-  | Entity-Relationship | How your database tables relate to each other |
+😟 **The problem**
 
-- **A formatted SRS document** (the IEEE-830 standard most departments
-  require) — numbered sections, table of contents, list of figures, a
-  glossary, and every diagram embedded and captioned in the right place.
-- Exported as **PDF and Word (DOCX)**, in whichever template your department
-  wants — a bound project report with a certificate page, a plain minimal
-  hand-in format, or your own template if you give it one.
+</td>
+<td>
 
-## How it works
+College projects need a requirements document **and** a full set of UML diagrams. Change one thing and you have to fix it in seven other places — and by hand-in day, the diagrams and the document no longer agree with each other.
 
-1. **You give it your project description** — paste text, or drop in a PDF.
-2. **It reads it and builds a model** of your system (the entities, who does
-   what, how things connect) and shows it to you before doing anything else.
-3. **You review it.** Fix a name, add something it missed, confirm it looks
-   right. Nothing gets generated until you approve this step.
-4. **It draws all 8 diagrams and writes the SRS** from that one approved
-   model — then you download the finished PDF or Word document.
+</td>
+</tr>
+<tr>
+<td width="22%">
 
-## Why this and not just asking a chatbot yourself
+💡 **The idea**
 
-- **It won't make things up.** If your description is too thin to describe a
-  real system, it tells you exactly what's missing instead of inventing
-  entities that were never there — so you never submit something that looks
-  finished but is actually fiction.
-- **Everything agrees with everything else**, because every diagram and
-  every document section is drawn from the one model you approved, not
-  generated separately and hoped into consistency.
-- **It's free and it's private.** The default setup uses a local AI model
-  (via [Ollama](https://ollama.com)) running on your own machine — nothing
-  about your project ever leaves your computer, and there's no bill.
+</td>
+<td>
+
+Keep **one** source of truth. The AI reads your description once and builds a model of your system. You check it. Then every diagram and every section of the document is drawn from that same approved model — so they can't disagree, because they were never separate.
+
+</td>
+</tr>
+<tr>
+<td width="22%">
+
+🎯 **Who it's for**
+
+</td>
+<td>
+
+Students and teams who have to hand in an SRS with its diagrams, in their department's format.
+
+</td>
+</tr>
+<tr>
+<td width="22%">
+
+🚦 **Where it is**
+
+</td>
+<td>
+
+Works end to end: extraction, review, all eight diagrams, the document, both exports and the templates — with 680+ automated tests. It runs on your own machine with a free local AI model.
+
+</td>
+</tr>
+</table>
 
 ---
 
-## Getting started
+## 🧭 How it works
 
-You'll need two free tools installed first:
+```mermaid
+flowchart TB
+    subgraph R1[" "]
+        direction LR
+        A["📝 Describe your<br/>project, or drop a PDF"] --> B["🤖 AI builds a<br/>model of it"] --> C["✅ You check<br/>and fix it"]
+    end
+    subgraph R2[" "]
+        direction LR
+        D["📐 8 diagrams<br/>drawn from it"] --> E["📄 The SRS<br/>written from it"] --> F["⬇️ Download<br/>PDF or Word"]
+    end
+    R1 --> R2
 
-1. **[Docker Desktop](https://www.docker.com/products/docker-desktop/)** —
-   packages up every piece of the app (the database, the server, the web
-   page) so you don't have to install any of them yourself.
-2. **[Ollama](https://ollama.com)** — runs the free local AI model. After
-   installing it, pull the model this project uses by default:
-   ```bash
-   ollama pull qwen2.5:7b
-   ```
+    classDef step fill:#EFF6FF,stroke:#3B82F6,stroke-width:2px,color:#172554
+    class A,B,C,D,E,F step
+    style R1 fill:none,stroke:none
+    style R2 fill:none,stroke:none
+```
 
-Then, from the project folder:
+Nothing is generated until you approve the model in step 3.
+
+---
+
+## ✨ What you get
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 📐 Eight diagrams, one story
+**Class, Use Case, Sequence, Activity, State, Component, Deployment** and **Entity-Relationship** — the standard set most departments ask for, with every name spelled identically across all eight.
+
+</td>
+<td width="50%" valign="top">
+
+### 📄 A finished SRS
+An IEEE-830 requirements document with numbered sections, a table of contents, a list of figures, a glossary and every diagram embedded and captioned in the right place.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+### 🎓 Your department's format
+Three templates built in — including a bound project report with a certificate page — and a new one is just a settings file. Export to **PDF** or editable **Word**.
+
+</td>
+<td valign="top">
+
+### 🙅 It won't make things up
+If a description is too thin to describe a real system, it says exactly what's missing instead of inventing parts that were never there.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+### 🔁 Redraw just one diagram
+Unhappy with one figure? Regenerate that diagram alone; the rest of the set carries forward unchanged.
+
+</td>
+<td valign="top">
+
+### 🔒 Free and private
+The default AI model runs on your own computer through **Ollama**. Nothing about your project leaves your machine, and there's no bill.
+
+</td>
+</tr>
+</table>
+
+---
+
+## 📮 From description to document
+
+```mermaid
+sequenceDiagram
+    autonumber
+    actor You as 👤 You
+    participant App as 🏛️ The app
+    participant AI as 🤖 Local AI
+    participant Render as 📐 Renderer
+
+    You->>App: Project description
+    App->>AI: Read it, once
+    AI-->>App: A model of<br/>the system
+    App-->>You: Check this first
+    You->>App: Fixed and approved
+    Note over App: The approved model<br/>is locked for good
+    App->>Render: Same model,<br/>every output
+    Render-->>App: 8 diagrams + SRS
+    App-->>You: PDF and Word
+```
+
+The AI runs **once**, to build the model. Everything after that is drawn from the model by ordinary code — which is why the same model always produces exactly the same diagrams.
+
+---
+
+## 🏗️ How it's built
+
+```mermaid
+flowchart LR
+    Web["🖥️ Web app<br/>Next.js"] --> API["⚡ API<br/>FastAPI"]
+    API --> Queue[("📬 Redis<br/>job queue")]
+    Queue --> Worker["🛠️ Workers<br/>all the heavy lifting"]
+    Worker --> AI["🤖 Ollama<br/>local AI"]
+    Worker --> UML["📐 PlantUML<br/>diagrams"]
+    API --> DB[("🗄️ PostgreSQL<br/>models & runs")]
+    Worker --> DB
+
+    classDef app fill:#EFF6FF,stroke:#3B82F6,stroke-width:2px,color:#172554
+    classDef infra fill:#F5F3FF,stroke:#8B5CF6,stroke-width:2px,color:#2E1065
+    class Web,API,Worker app
+    class Queue,AI,UML,DB infra
+```
+
+| Layer | Tool | Why this one |
+|---|---|---|
+| 🖥️ Web app | **Next.js + TypeScript + Tailwind + shadcn/ui** | A clear review screen for checking the model before anything is generated |
+| ⚡ API | **FastAPI (Python)** | Answers instantly; slow work is handed to the workers |
+| 🛠️ Workers | **arq + Redis** | Generation never runs inside a web request, so nothing times out |
+| 🗄️ Database | **PostgreSQL** | Stores each model; an approved version can never be edited |
+| 📐 Diagrams | **PlantUML** (+ Mermaid) | Draws all eight diagram types, including ones Mermaid can't |
+| 🤖 AI | **Ollama, qwen2.5:7b** | Free, local, private — and swappable for any OpenAI-compatible server |
+| 📦 Running it | **Docker Compose** | One command starts every piece |
+
+---
+
+## 🛡️ Built to be trusted
+
+Each promise below has an automated test that fails if it ever stops being true.
+
+| | Promise | How it's held |
+|---|---|---|
+| 🧩 | **Every diagram agrees with every other** | Names are checked to be identical, character for character, across all eight diagrams on every run. |
+| 🚪 | **Nothing is generated before you approve** | The code has no path from a draft model to the diagrams except your confirmation. |
+| 🔒 | **An approved model can't change** | The database itself refuses to edit or delete a confirmed version. |
+| 🎯 | **Same model, same output** | Golden-file tests compare the generated diagrams byte for byte. |
+| 🤖 | **The AI is kept in one place** | A scan fails the build if a model name appears anywhere outside the one module allowed to talk to the AI. |
+| 🛡️ | **Uploaded files are data, not orders** | Text from an uploaded PDF is fenced off, so it can't instruct the AI. |
+| 🔗 | **Downloads are protected** | Links are signed and expire. |
+
+| Tests | Count |
+|---|---|
+| 🐍 Python — the model, extraction, diagrams, document, exporters | 602 |
+| ⚡ API | 3 |
+| 🖥️ Web app | 82 |
+
+Sixty of the Python tests need the PostgreSQL database that the Docker stack provides; the rest run anywhere. There's also an end-to-end acceptance test, `make at1`, which builds a complete 18-page document from scratch.
+
+---
+
+<a name="roadmap"></a>
+
+## 🗺️ Roadmap
+
+| Status | Milestone |
+|:---:|---|
+| ✅ | Extraction from text or PDF, with an honest refusal when there's too little to go on |
+| ✅ | The review screen and the approval gate |
+| ✅ | All eight diagrams, kept consistent, and redrawing one at a time |
+| ✅ | The IEEE-830 SRS, exported to PDF and Word, in three built-in templates |
+| ✅ | A metrics dashboard that tells a careful review from a rubber stamp |
+| 🔜 | Templates collected from real university departments *(today's three are reconstructed)* |
+| 🔜 | Moving generated files to object storage |
+| 💭 | Left out of version 1 on purpose: reading a project from GitHub or a ZIP, team collaboration, and more document types such as high- and low-level design |
+
+---
+
+## 📁 What's in this repository
+
+```
+📦 AI Software Architect
+├── 📂 web/         the web app you use
+├── 📂 api/         the API the web app talks to
+├── 📂 worker/      where every diagram and document is generated
+├── 📂 shared/      the model, the AI gateway, diagrams, the SRS and exporters
+├── 📂 schemas/     the model's schema, from which the web app's types are generated
+├── 📂 acceptance/  the end-to-end test that defines "it works"
+└── 📂 docs/        the developer guide and milestone notes
+```
+
+The product thinking is written down too: [`PRD_AI_Software_Architect.md`](PRD_AI_Software_Architect.md) and [`SRS_AI_Software_Architect.md`](SRS_AI_Software_Architect.md).
+
+---
+
+## 👩‍💻 For developers
+
+You need **[Docker Desktop](https://www.docker.com/products/docker-desktop/)** and **[Ollama](https://ollama.com)**, with its default model:
+
+```bash
+ollama pull qwen2.5:7b
+```
+
+Then copy the settings file and add one secret (the guide explains it):
 
 ```bash
 cp .env.example .env
-```
-
-Generate one required secret (used to sign secure download links) and paste
-it into `.env` as `ASA_SIGNING_SECRET`:
-
-```bash
-python -c "import secrets; print(secrets.token_urlsafe(32))"
 ```
 
 Start everything:
@@ -100,331 +279,22 @@ Start everything:
 make dev
 ```
 
-Create the database tables (first time only):
+Open <http://localhost:3000> — no sign-in needed.
 
-```bash
-docker compose exec api alembic upgrade head
-```
+**The full developer guide is in [`docs/DEVELOPER-GUIDE.md`](docs/DEVELOPER-GUIDE.md):**
 
-Open **http://localhost:3000** — that's it, no sign-in, no account. Drop in
-a project description and try it.
-
-Want to check everything is actually working end to end before you trust it
-with a real project? Run the built-in end-to-end check:
-
-```bash
-make at1
-```
-
-```
-  PASS   1. CPM entities                                 8
-  PASS   2. CPM relationships                            9
-  PASS   3. Eight diagrams render                        8 of 8 rendered
-  PASS   4. Every rendered diagram is syntactically valid 8 valid, 0 rejected
-  PASS   5. Entity naming byte-identical across every diagram 99 names, 0 mismatches
-  PASS   6. PDF page count                               18 pages
-  PASS   7. All eight present as numbered, captioned figures 8 figures
-  PASS   8. Cover page carries the project name and author
-  PASS   9. Index entries match the real section and figure numbering
-  PASS  10. DOCX text matches PDF text
-  PASS  11. Total wall time                              7.4s
-  11 passed, 0 failed  ·  wall time 7.4s of 180s budget
-```
-
-> **`make down` deletes your data.** It removes the database volume. Use
-> `docker compose down` instead if you want to stop the app but keep what
-> you've made.
-
-## Frequently asked questions
-
-**Does this cost anything?** No. It runs on your own machine with a free
-local AI model. There's no tier, no subscription, no usage limit.
-
-**Is my project idea private?** By default, yes — the local model runs on
-your computer and nothing is sent anywhere. You can optionally point it at a
-hosted AI provider instead (see [Configuration](#configuration)), in which
-case that provider's own privacy terms apply.
-
-**What if the AI gets something wrong in my model?** You review and edit the
-model before anything is generated — rename things, add what's missing,
-delete what shouldn't be there. Nothing is final until you confirm it.
-
-**Can I use my university's exact template?** Three formats ship built in,
-and adding a new one is just a JSON config file (see
-[Templates](#templates)) — no code changes needed.
-
-**It says my description doesn't have enough detail — why?** This is
-deliberate (see [Why this and not just asking a chatbot yourself](#why-this-and-not-just-asking-a-chatbot-yourself)
-above): rather than guess and hand you something wrong, it tells you
-specifically what's missing so you can add it.
+| Topic | Jump to |
+|---|---|
+| 🚀 Every setup step, including the secret | [Getting started](docs/DEVELOPER-GUIDE.md#getting-started) |
+| 🧱 The one rule the architecture follows | [The one architectural rule](docs/DEVELOPER-GUIDE.md#the-one-architectural-rule) |
+| 🛡️ Each guarantee and its test | [The guarantees](docs/DEVELOPER-GUIDE.md#the-guarantees-and-how-each-is-held) |
+| 🎓 Adding a department's template | [Templates](docs/DEVELOPER-GUIDE.md#templates) |
+| 📋 What works today, and the known gaps | [Current status](docs/DEVELOPER-GUIDE.md#current-status) |
 
 ---
 
-## For developers
+<div align="center">
 
-Everything below this line is for people who want to understand how it's
-built, contribute, or self-host it seriously — not required reading just to
-use the app.
+**Built by [Aryan Deshmukh](https://github.com/AryanDeshmukh-2711)**
 
-### The one architectural rule
-
-Everything is rendered from the **Canonical Project Model (CPM)**.
-
-```mermaid
-flowchart LR
-    A[Description<br/>or PDF] --> B[LLM extraction]
-    B --> C[(CPM)]
-    C --> D{User review<br/>gate}
-    D -->|confirmed| E[CPMVersion<br/>immutable]
-    E --> F[Deterministic render]
-    F --> G[8 diagrams]
-    F --> H[IEEE 830 SRS]
-    G --> I[PDF]
-    G --> J[DOCX]
-    H --> I
-    H --> J
-```
-
-The LLM runs **once**, to build the CPM. After the user confirms it, every
-diagram and every document section is rendered *from the CPM*. No artefact is
-ever produced by a separate model call that bypasses it.
-
-This is what guarantees cross-diagram consistency, which is the entire
-product differentiator. Violating it silently destroys the product — so a
-test asserts that no mapper imports an LLM client, and another asserts that
-no model identifier appears anywhere outside the gateway module.
-
-### What it produces
-
-| | |
-|---|---|
-| **Diagrams** | Class, Use Case, Sequence, Activity, State, Component, Deployment, Entity-Relationship |
-| **Document** | IEEE 830-1998 SRS — numbered sections, contents, list of figures/tables, glossary, per-use-case functional requirements |
-| **Formats** | PDF (vector diagrams, selectable text) and DOCX (real Word styles, editable) |
-| **Templates** | Three built in; a fourth is a JSON file, not a deploy |
-
-A generated 8-diagram document is 18 pages and takes **7.4 seconds** end to end
-against a 180-second budget.
-
-### Using the API
-
-No sign-in step — a single-user local tool has no one to authenticate a
-caller against.
-
-```bash
-curl -sX POST localhost:8000/projects/my-project/review/seed \
-  -H 'content-type: application/json' -d '{}'
-```
-
-| Endpoint | Purpose |
-|---|---|
-| `POST /projects/{id}/review/seed` | Put a model into review |
-| `GET  /projects/{id}/review` | Current draft, validation issues, confirmable |
-| `POST /projects/{id}/review/edit` | One structural edit (renames cascade) |
-| `POST /projects/{id}/review/confirm` | The FR-6 gate → immutable `CPMVersion` |
-| `POST /runs` | Queue a generation run (202) |
-| `GET  /runs/{id}` · `/events` | Status; server-sent progress stream |
-| `POST /runs/{id}/regenerate` | FR-12 — redraw one diagram |
-| `GET  /runs/{id}/history` | What was regenerated, and when |
-| `GET  /runs/{id}/artefacts` | Signed, expiring links to each diagram |
-| `POST /runs/{id}/export` | Queue a PDF/DOCX (202) |
-| `GET  /runs/exports/{id}` | Export status + signed download link |
-| `GET  /metrics` · `/metrics.json` | Funnel dashboard (no third-party SDK) |
-
-### Architecture
-
-```
-├── api/          FastAPI — HTTP surface, alembic migrations
-├── worker/       arq workers — every generation stage runs here, never in a request
-├── web/          Next.js + TypeScript + Tailwind + shadcn/ui
-├── shared/       everything both api and worker need — one definition, imported twice
-│   ├── cpm/            the model, its JSON Schema, integrity rules, fixtures
-│   ├── llm/            the gateway — the ONLY module that knows a model name
-│   ├── extraction/     description → CPM, with a fabrication floor
-│   ├── diagrams/       mappers (one per type), engines, renderer
-│   ├── consistency/    the FR-10 validator
-│   ├── generation/     run orchestration, regeneration, export
-│   ├── review/         edit operations, the confirm gate
-│   ├── srs/            document AST, IEEE 830 layout, templates, PDF + DOCX exporters
-│   ├── analytics/      funnel events, metrics, dashboard
-│   └── store/          SQLAlchemy models shared by both services
-└── acceptance/   AT-1 — the end-to-end definition of "V1 works"
-```
-
-**Services:** `postgres` · `redis` · `plantuml` · `kroki` (Mermaid, opt-in
-profile) · `api` · `worker` · `web`
-
-**Stack is fixed:** Next.js/TypeScript/Tailwind/shadcn, FastAPI, PostgreSQL
-(JSONB for CPM payloads), Redis + arq, S3-compatible storage, PlantUML primary
-with Mermaid secondary. PlantUML is a hard dependency — Mermaid cannot render use
-case, component, deployment, object, communication or timing diagrams.
-
-**The LLM is free and local by default.** `qwen2.5:7b` via Ollama: no API key, no
-quota, and nothing leaves the machine — which makes "your content is never used
-for training" true by construction rather than by a provider's promise.
-
-### The guarantees, and how each is held
-
-These are not aspirations. Each has a test that fails if it stops being true, and
-several have a planted-regression check proving the test is not vacuous.
-
-| | Guarantee | How it is held |
-|---|---|---|
-| **C-2** | No model identifier outside the LLM gateway | Repo-wide scanner over every `.py` file |
-| **C-3** | No artefact bypasses the CPM | AST walk: no mapper imports an LLM client or `httpx` |
-| **C-4** | No generation in the HTTP request cycle | `POST /runs` returns 202 in ~17ms; export in ~30–67ms |
-| **FR-6** | Generation blocked until the user confirms | Type-enforced: `confirm_draft` is the only bridge from `CPMDraft` to `CPM` |
-| **FR-7** | A confirmed version is immutable | Postgres `RULE`s — `UPDATE`/`DELETE` are no-ops |
-| **FR-9** | Identical CPM ⇒ identical output | Golden-file tests, byte for byte |
-| **FR-10** | Entity names byte-identical everywhere | Validator runs unconditionally; an AST guard fails the build if the call is ever put inside an `if` |
-| **FR-11** | Diagram source validated before it is shown | Engine round-trip, one retry, failure contained to one figure |
-| **FR-12** | Regenerate one diagram, not the set | Child run carries the rest forward; an unchanged model is *reported*, not silently redrawn |
-| **FR-16** | Every diagram embedded, numbered, captioned | An unplaced diagram type lands in an appendix rather than vanishing |
-| **NFR-S3** | Uploads are data, never instructions | Delimited, with neutralisation of the closing token |
-| **NFR-S4** | Download links signed and expiring | HMAC over id + deadline, constant-time compare |
-| **NFR-Q4** | No unresolved placeholder survives | Asserted over every string in the document AST |
-
-#### Two design decisions worth reading
-
-**The document AST is a real layer.** `shared/srs/ast.py` knows about sections,
-figures and cross-references and nothing about DOCX or PDF — a test fails if it
-ever imports a rendering library. Both exporters are pure functions of that tree,
-so neither format can become a byproduct of the other. AT-1 checks this by
-extracting the text of both files and verifying that every word of the DOCX
-appears in the PDF in the same order, the only permitted extras being list
-markers and text drawn inside vector figures.
-
-**Cross-references are references, not strings.** A sentence holds
-`FigureRef("fig-class")`, never `"Figure 3"`, and takes its number from the same
-pass that numbers the figure. Move a figure and the sentence follows it.
-
-### The review gate metric
-
-The most important number in the product, and the one most easily misread.
-
-A user confirming with **zero edits** means either *extraction was excellent* or
-*they did not look* — identical outcomes demanding opposite responses. Nothing
-about the outcome can separate them, so the review screen ships evidence of
-attention with the confirmation: active seconds (idle excluded), coverage (how
-much of the model was actually brought into view), and inspections.
-
-Confirmations land in four buckets — `edited`, `verified`, `rubber_stamped`,
-`unknown` — with the time bar scaled to model size, because twenty seconds is
-attentive for three entities and derisory for forty. Neither signal alone
-suffices: a screen left open over lunch and a two-second scroll to the bottom
-both come back `rubber_stamped`.
-
-Raw signals are stored beside the verdict, so history can be re-classified once
-the thresholds are validated against real users.
-
-### Testing
-
-```bash
-make test    # 575 shared + 3 api + web suites
-make at1     # the end-to-end acceptance test (needs a live stack)
-make lint    # ruff, plus generated-file drift checks
-```
-
-`make at1` prints a checklist, not a stack trace. A failure names the assertion,
-what was expected, what was found, and — where the cause is known — what to do
-about it, because a traceback tells you where Python gave up rather than which
-promise broke.
-
-Tests for the CPM and the consistency validator are written **before** the
-implementation. Diagram renders are never mocked.
-
-### Templates
-
-Templates are **data**. Adding one is a JSON file in
-`shared/srs/template/builtin/`, read at call time, with no deploy and no code
-change — a test writes an invented template to a temp path and renders both
-formats from it.
-
-The schema was designed against the two most *dissimilar* real formats, not the
-two easiest:
-
-| | Bound project report | Course hand-in |
-|---|---|---|
-| Page | A4, 38.1mm binding margin, mirrored | US Letter, 25.4mm all round |
-| Body | Times 12pt, 1.5 spacing, justified | Calibri 11pt, 1.15, left |
-| Sections | `Chapter 1`, new page each | `1`, running on |
-| Figures | `Fig. 3.2` — restarts per chapter | `Figure 7` — document-wide |
-| Front matter | Cover **+ certificate with signature blocks** | Cover |
-| Index | Bordered `Sr. No. / Chapter / Page No.` table | Dotted contents + LoF + LoT |
-| User fields | 8, including a logo upload | 3 |
-
-Every difference above is a config value. A test parses the applier's AST and
-fails if it ever names a template id in code.
-
-### Make targets
-
-| | |
-|---|---|
-| `make dev` | Build and start the full stack |
-| `make down` | Stop **and delete volumes** — use `docker compose down` to keep data |
-| `make test` | api, shared and web test suites |
-| `make at1` | Acceptance test AT-1, end to end |
-| `make lint` / `make fmt` | Ruff, plus generated-file drift checks |
-| `make types` | Regenerate the CPM JSON Schema **and** the TypeScript types from it |
-| `make golden` | Regenerate golden diagram sources, then review the diff |
-| `make health` | API dependency health report |
-| `make logs` / `make clean` | Tail logs; remove caches |
-
-TypeScript types are **generated, never hand-written** — two `--check` guards in
-`make lint` fail if the schema or the generated types drift.
-
-### Configuration
-
-Copy `.env.example` to `.env`. Compose supplies local defaults for everything
-except `ASA_SIGNING_SECRET`, which has no default on purpose: a committed one
-would make every signed URL on the platform forgeable by anyone who read the
-source.
-
-To use a real model for extraction, point the gateway at a local Ollama:
-
-```bash
-LLM_PROVIDER=ollama
-LLM_BASE_URL=http://host.docker.internal:11434
-LLM_MODEL=qwen2.5:7b
-```
-
-Any OpenAI-compatible server works too (`LLM_OPENAI_BASE_URL`, `LLM_API_KEY`).
-The model name appears in exactly one file, and a test keeps it that way.
-
-### Current status
-
-Working end to end and covered by tests: extraction, the review gate, all eight
-mappers, the consistency validator, selective regeneration, SRS assembly, both
-exporters, the template system, and the metrics dashboard.
-
-Known gaps, stated plainly:
-
-- **AT-1 replays extraction.** With no model server reachable, the recorded model
-  output is replayed through the *real* gateway and the *real* extraction service
-  — schema validation, de-duplication, orphan dropping and the FR-5 floor all
-  still run; only the model call is replayed. A replayed run can never print
-  `AT-1 PASSED`, whatever the assertions say. Start an Ollama instance and re-run
-  to claim it.
-- **The shipped templates are archetypes.** They were reconstructed rather than
-  collected from real departments, and each declares this in an `origin` field.
-  Swapping in genuine ones is what will actually validate the schema.
-- **Artefacts live in the database.** A run is under a megabyte, so object
-  storage is not yet pulling its weight. The `storage_key` column exists so
-  moving to R2 is a backfill rather than a migration of the read path.
-
-#### Not in V1 — deliberately
-
-GitHub/ZIP ingestion and AST parsing · team collaboration and comments · version
-comparison and drift detection · BPMN, customer journey and cloud architecture
-diagrams · HLD/LLD/API docs · AI chat over the project · SSO, on-premise, public
-API.
-
-### Documents
-
-[`PRD_AI_Software_Architect.md`](PRD_AI_Software_Architect.md) ·
-[`SRS_AI_Software_Architect.md`](SRS_AI_Software_Architect.md) ·
-[`CLAUDE.md`](CLAUDE.md) — project context and working agreement
-
-### Licence
-
-Not yet chosen. Until one is added, all rights are reserved by the author.
+</div>
